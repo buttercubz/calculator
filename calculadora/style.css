@@ -1,0 +1,137 @@
+/* pagina principal */
+#a {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #163544;
+}
+ul {
+    margin: 0px;
+    margin-left: 470px;
+    margin-right: 520px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0;
+    display: flex;
+}
+ul li {
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+ul li a {
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition:  0.59s;
+    background-color: #e7235bad;
+}
+ul:hover li a {
+    transform: scale(1.3);
+    opacity: .2;
+    filter: blur(3px);
+}
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+ul li a:before {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e73064ad;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scale(0);
+    z-index: -1;
+}
+ul li a:hover:before {
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+/* calculadora */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.calculadora {
+    background-color: #5a5555;
+    width: fit-content;
+    margin: auto;
+    margin-top: 35px
+}
+    .sr {
+    padding: 0px 18px 18px 18px;
+}
+    .sr button {
+    width: 100%;
+    background-color: rgb(51, 170, 130);
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    padding: 0px
+}
+    .teclas {
+    display: flex;
+}
+    .pantalla {
+    padding: 18px 18px 0px 18px;
+}
+    .numeros {
+    padding: 18px 9px 18px 18px;
+}
+    .op {
+    padding: 18px 18px 18px 9px
+}
+    #resultado {
+    background-color: #666;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    font-family: monospace;
+    font-size: 20px
+}
+    .op button {
+    display: block;
+    width: 54px;
+    height: 54px;
+    padding: 9px 15px;
+    background-color: rgb(43, 39, 39);
+    color: #fff;
+    border: none;
+}
+    .numeros div {
+    text-align: center;
+}
+    .numeros button {
+    border: 0px;
+    background-color: #fff;
+    transition: all 0.09s
+}
+    .numeros button:hover {
+    box-shadow: 0px 0px 12px #aaa;
+}
+    button {
+    margin: 2px 0px;
+    padding: 15px 24px;
+    font-size: 19px;
+}
+    #b {
+    background-color: #aaa;
+}
+    #titulo {
+    text-align: center;
+    margin-top: 15px;
+}
