@@ -1,24 +1,25 @@
 /* pagina principal */
 #a {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     justify-content: center;
+    height: 20%;
     align-items: center;
-    height: 100vh;
+    max-width: 13360px;
+    min-width: 360px;
     background: #163544;
 }
 ul {
-    margin: 0px;
-    margin-left: 470px;
-    margin-right: 520px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    padding: 0;
-    display: flex;
+    position: absoluted;
+    align-content: center;
+    margin-left: 23%;
+    margin-right: 45%;
+    padding: 0px;
+    display: inline-flex;
 }
 ul li {
     list-style: none;
-    margin: 0 20px;
+    margin: 0% 5%;
     transition: 0.5s;
 }
 ul li a {
@@ -61,17 +62,78 @@ ul li a:hover:before {
     transform-origin: left;
     transform: scaleX(1);
 } 
+p {
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 50px;
+}
+    @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+    @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+    @media (min-width: 1200px) {
+    .container {
+      max-width: 1040px;
+    }
+  }
+    @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 360px;
+    margin-left: 240px;
+  }
 /* calculadora */
+@media (min-width: 992px) {
+    .container_dos {
+      max-width: 960px;
+    }
+  }
+    @media (min-width: 576px) {
+    .container_dos {
+      max-width: 540px;
+    }
+  }
+    @media (min-width: 1200px) {
+    .container_dos {
+      max-width: 1040px;
+    }
+  }
+    @media (min-width: 768px) {
+    .container_dos {
+      max-width: 720px;
+    }
+  }
+  .container_dos {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 360px;
+    margin-left: 240px;
+  }
 * {
     padding: 0px;
-    margin: 0px;
+    margin: auto;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 .calculadora {
     background-color: #5a5555;
-    width: fit-content;
+    width:fit-content;
     margin: auto;
-    margin-top: 35px
+    margin-top: 30px;
 }
     .sr {
     padding: 0px 18px 18px 18px;
@@ -82,7 +144,7 @@ ul li a:hover:before {
     color: #fff;
     border: none;
     font-size: 50px;
-    padding: 0px
+    padding: 0%;
 }
     .teclas {
     display: flex;
@@ -105,9 +167,9 @@ ul li a:hover:before {
 }
     .op button {
     display: block;
-    width: 54px;
-    height: 54px;
-    padding: 9px 15px;
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
     background-color: rgb(43, 39, 39);
     color: #fff;
     border: none;
