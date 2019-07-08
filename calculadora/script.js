@@ -14,88 +14,87 @@ document.getElementById("r").addEventListener("click",o2);
 document.getElementById("d").addEventListener("click",o3);
 document.getElementById("m").addEventListener("click",o4);
 document.getElementById("sr").addEventListener("click",showResult);
+document.getElementById("reset").addEventListener("click", clean);
 //funciones
 function n1() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n1").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n1").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n2() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n2").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n2").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n3() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n3").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n3").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n4() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n4").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n4").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n5() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n5").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n5").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n6() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n6").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n6").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n7() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n7").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n7").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n8() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n8").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n8").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n9() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n9").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n9").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
 function n0() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("n0").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("n0").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
-}
-
+}''
 function o1() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("s").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("s").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
-
 function o2() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("r").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("r").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
-
 function o3() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("d").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("d").innerHTML;
 	document.getElementById('resultado').innerHTML = actual + sumado
 }
-
 function o4() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let sumado = document.getElementById("m").innerHTML;
+	const actual = document.getElementById('resultado').innerHTML;
+	const sumado = document.getElementById("m").innerHTML;
 	document.getElementById('resultado').innerHTML = actual +  sumado
 }
-
+function clean() {
+	document.getElementById('resultado').textContent = "";
+}
 function showResult() {
-	let actual = document.getElementById('resultado').innerHTML;
-	let suma = actual.indexOf("+");
-	let resta = actual.indexOf("-");
-	let div = actual.indexOf("÷");
-	let mult = actual.indexOf("x");
+	const actual = document.getElementById('resultado').innerHTML;
+	const suma = actual.indexOf("+");
+	const resta = actual.indexOf("-");
+	const div = actual.indexOf("÷");
+	const mult = actual.indexOf("x");
 	if (suma !== -1) {
 		arr = actual.split("+",2);
 		res = parseInt(arr[0]) + parseInt(arr[1]);
@@ -104,16 +103,13 @@ function showResult() {
 		arr = actual.split("-",2);
 		res = arr[0] - arr[1];
 		document.getElementById("resultado").innerHTML = res;
-		
 	} else if (div !== -1) {
 		arr = actual.split("÷",2);
 		res = arr[0] / arr[1];
 		document.getElementById("resultado").innerHTML = res;
-		
 	} else if (mult !== -1) {
 		arr = actual.split("x",2);
 		res = arr[0] * arr[1];
 		document.getElementById("resultado").innerHTML = res;
-		
 	}
 }
